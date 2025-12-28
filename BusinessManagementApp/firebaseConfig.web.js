@@ -4,7 +4,7 @@ import { getAuth, browserLocalPersistence } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyARr5vtjLDfRF6xO-v0oW_42TGd4sZXbvE',
+  apiKey: "REMOVED_FOR_SECURITY",
   authDomain: 'retailx-befc7.firebaseapp.com',
   projectId: 'retailx-befc7',
   storageBucket: 'retailx-befc7.firebasestorage.app',
@@ -17,5 +17,4 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 auth.setPersistence(browserLocalPersistence);
-
 export const db = getFirestore(app);
